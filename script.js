@@ -16,9 +16,9 @@ $(document).ready(function(){
 			lang: 'de'
 						},
 						dataType: 'jsonp'
-					}).done(function){
+					}).done(function(data)){
 				console.log(data);
 
-			});
+		});
 	});
 });
