@@ -30,7 +30,7 @@ $(document).ready(function(){
 				}
 			}).done(function(data){
 				console.log(data);
-				$('current-location').text(data.results[0].address_components[1].long_name);
+				$('.current-location').text(data.results[0].address_components[1].long_name);
 			})
 		});
 	});
