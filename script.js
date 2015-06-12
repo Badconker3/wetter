@@ -30,6 +30,7 @@ $(document).ready(function(){
 				}
 			}).done(function(data){
 				console.log(data);
+				//hier werden die einzelnen Daten aus dem Array gelesen
 				$('.strasse').text(data.results[0].address_components[1].long_name);
 				$('.ort').text(data.results[0].address_components[2].long_name);
 				$('.land').text(data.results[0].address_components[5].long_name);
