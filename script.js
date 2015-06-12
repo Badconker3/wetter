@@ -30,7 +30,7 @@ $(document).ready(function(){
 				}
 			}).done(function(data){
 				console.log(data);
-				$('current')
+				$('current-location').text(data.results[0].formatted address);
 			})
 		});
 	});
