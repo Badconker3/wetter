@@ -30,7 +30,9 @@ $(document).ready(function(){
 				}
 			}).done(function(data){
 				console.log(data);
-				$('.current-location').text(data.results[0].address_components[1].long_name);
+				$('.strasse').text(data.results[0].address_components[1].long_name);
+				$('.ort').text(data.results[0].address_components[2].long_name);
+				$('.land').text(data.results[0].address_components[5].long_name);
 			})
 		});
 	});
