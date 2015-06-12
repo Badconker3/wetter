@@ -9,7 +9,7 @@ $(document).ready(function(){
 		//$('.longitude').text(position.coords.longitude);
 		//$('.latitude').text(position.coords.latitude);
 		//$('.accuracy').text(position.coords.accuracy);
-		$.ajax{
+		$.ajax({
 			url:'https://api.forecast.io/forecast/3a29abb9ce9c8e475af3d33012259689/' + koordinaten.latitude + ',' + koordinaten.longitude,
 			data: {
 			units: 'si',
