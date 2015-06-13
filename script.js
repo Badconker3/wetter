@@ -20,6 +20,7 @@ $(document).ready(function(){
 		}).done(function(data){
 			console.log(data);
 			$('.current-temperature').text(data.currently.temperature + '°C');
+			$('.wetter-voraussage').text(data.hourly.summary);
 			//Google Maps io Anfrage
 			$.ajax({
 				url:'https://maps.googleapis.com/maps/api/geocode/json',
