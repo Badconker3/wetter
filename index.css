@@ -4,8 +4,19 @@
 .wetter-voraussage{
 	text-align: center;
 }
+#main{
+	background-color: black;
+	color: white;
+}
+#sub{
+	background-color: black;
+	color: white
+}
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+}
+#sonne{
+	position: center;
 }
