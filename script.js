@@ -20,7 +20,21 @@ $(document).ready(function(){
 		}).done(function(data){
 			console.log(data);
 			$('.current-temperature').text(data.currently.temperature + '°C');
-			$('.wetter-voraussage').text(data.hourly.summary);
+			$('.wetter-jetzt').text(data.hourly.data[0].summary);
+			$('.wetter-eins').text(data.hourly.data[1].summary);
+			$('.wetter-zwei').text(data.hourly.data[2].summary);
+			$('.wetter-drei').text(data.hourly.data[3].summary);
+			$('.wetter-vier').text(data.hourly.data[4].summary);
+			$('.wetter-fünf').text(data.hourly.data[5].summary);
+			$('.wetter-sechs').text(data.hourly.data[6].summary);
+			$('.wetter-sieben').text(data.hourly.data[7].summary);
+			$('.wetter-acht').text(data.hourly.data[8].summary);
+			$('.wetter-neun').text(data.hourly.data[9].summary);
+			$('.wetter-zehn').text(data.hourly.data[10].summary);
+			$('.wetter-elf').text(data.hourly.data[11].summary);
+			$('.wetter-zwölf').text(data.hourly.data[12].summary);
+
+
 			//Google Maps io Anfrage
 			$.ajax({
 				url:'https://maps.googleapis.com/maps/api/geocode/json',
