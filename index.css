@@ -20,3 +20,9 @@
 #sonne{
 	position: center;
 }
+#content{
+	text-align: center;
+}
+#sonne{
+	transform:rotate(180deg);
+}
