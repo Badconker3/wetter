@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
 var skycons = new Skycons({
-		"color": "white",
+		"color": "black",
 		resizeClear: true
 		});
-	
+
 	navigator.geolocation.getCurrentPosition(function(position){
 
 		

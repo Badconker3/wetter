@@ -6,20 +6,20 @@
 }
 #main{
 	background-color: #ff1a02;
-	color: white;
+	color: black;
 }
 #sub{
 	background-color: #ff1a02;
-	color: white
+	color: black;
 }
 #head{
-	background-color: #ffff00;
+	background-color: #ff1a02;
 }
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	background-color: #ffff00;
+	background-color: #ff1a02;
 }
 #sonne{
 	position: center;
