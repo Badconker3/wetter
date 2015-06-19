@@ -12,17 +12,20 @@
 	background-color: black;
 	color: white
 }
+#head{
+	background-color: red;
+}
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
+	background-color: red;
 }
 #sonne{
 	position: center;
 }
 #content{
 	text-align: center;
-	background-color: red;
 }
 #sonne{
 	transform:rotate(180deg);
