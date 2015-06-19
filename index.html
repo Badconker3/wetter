@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+	<!--Ermöglicht die Entfernung der URL bei apple und android Geräten-->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<title>Wetterapplikation</title>
+	<!--Icon für Android-->
 	<link rel="icon" sizes="192x192" href="Sonne_V1.png">
+	<!--Icon für Apple-->
 	<link rel="apple-touch-icon" sizes="120x120" href="Sonne_V2.png">
+	<!--Icon für Blackberry-->
 	<link rel="icon" sizes="49x49" href="icon.png">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -28,6 +32,8 @@
 			
 			
 			<h1 class="current-temperature">  °C</h1>
+			<br>
+			<h3 class="wetter-jetzt"></h3>
 			<br>
 			<canvas class="js-icon" height="128" widht="128"></canvas>
 			<!--<img src="Sonne_V2.png" alt="Bild der Sonne" id="sonne">-->
