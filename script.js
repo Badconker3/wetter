@@ -1,10 +1,13 @@
 $(document).ready(function(){
-	navigator.geolocation.getCurrentPosition(function(position){
 
-		var skycons = new Skycons({
+var skycons = new Skycons({
 		"color": "white",
 		resizeClear: true
 		});
+	
+	navigator.geolocation.getCurrentPosition(function(position){
+
+		
 
 
 		var koordinaten = {
@@ -66,7 +69,4 @@ $(document).ready(function(){
 		
 	skycons.play();
 
-	setTimeout(function(){
-		skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
-	}, 5000);
 });
