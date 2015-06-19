@@ -22,6 +22,7 @@
 }
 #content{
 	text-align: center;
+	background-color: red;
 }
 #sonne{
 	transform:rotate(180deg);
