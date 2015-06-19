@@ -26,7 +26,8 @@ $(document).ready(function(){
 		}).done(function(data){
 			console.log(data);
 			$('.current-temperature').text(data.currently.temperature + '°C');
-			$('.wetter-jetzt').text(data.hourly.data[0].summary);
+			skycons.set($('.js-icon')[0], data.currently.icon);
+			$('.wetter-jetzt').text(data.hourly.data[0].icon:"rain");
 			$('.wetter-eins').text(data.hourly.data[1].summary);
 			$('.wetter-zwei').text(data.hourly.data[2].summary);
 			$('.wetter-drei').text(data.hourly.data[3].summary);
@@ -39,7 +40,7 @@ $(document).ready(function(){
 			$('.wetter-zehn').text(data.hourly.data[10].summary);
 			$('.wetter-elf').text(data.hourly.data[11].summary);
 			$('.wetter-zwölf').text(data.hourly.data[12].summary);
-
+			
 
 			//Google Maps io Anfrage
 			$.ajax({
@@ -59,17 +60,13 @@ $(document).ready(function(){
 		});
 	});
 
-	var skycons = new Skycons({
-		"color": "white",
-		resizeClear: true
-		});
+	
 
 	skycons.add($('.js-icon')[0], Skycons.RAIN);
 		
 	skycons.play();
 
 	setTimeout(function(){
-		console.log(data);
 		skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
 	}, 5000);
 });
