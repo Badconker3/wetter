@@ -60,7 +60,6 @@ $(document).ready(function(){
 	});
 
 	var skycons = new Skycons({
-		console.log(data);
 		"color": "white",
 		resizeClear: true
 		});
@@ -70,6 +69,7 @@ $(document).ready(function(){
 	skycons.play();
 
 	setTimeout(function(){
+		console.log(data);
 		skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
 	}, 5000);
 });
