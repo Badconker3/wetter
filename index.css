@@ -16,17 +16,22 @@
 }
 #head{
 	background-color: #ff1a02;
+	color: black;
+	font-size: 30px;
 	text-shadow: none;
+	border: none;
+	border-bottom: 5px;
+	border-color: black;
 }
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	background-color: #ff1a02;
+	color: black;
 	text-shadow: none;
-}
-#sonne{
-	position: center;
+	border-top-width: 5px;
+	border-color: black;
 }
 #content{
 	text-align: center;
