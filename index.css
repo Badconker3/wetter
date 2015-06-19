@@ -1,3 +1,7 @@
+font-family: 'Play', sans-serif;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Squada One', cursive;
+
 .current-temperature{
 		text-align: center;
 	}
@@ -15,6 +19,7 @@
 	text-shadow: none;
 }
 #head{
+	font-family: 'Orbitron', sans-serif;
 	background-color: #ff1a02;
 	color: black;
 	text-shadow: none;
@@ -23,6 +28,7 @@
 	border-color: black;
 }
 #footer{
+	font-family: 'Orbitron', sans-serif;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
@@ -34,6 +40,7 @@
 }
 #content{
 	text-align: center;
+	font-family: 'Squada One', cursive;
 }
 
 }
@@ -44,12 +51,14 @@
 	margin: 0 auto;
 }
 #btn{
+	font-family: 'Play', sans-serif;
 	border-color: black;
 	border-width: 5px;
 	background-color: #ff1a02;
 	text-shadow: none;
 }
 #btnb{
+	font-family: 'Play', sans-serif;
 	border-color: black;
 	border-width: 5px;
 	background-color: #ff1a02;
