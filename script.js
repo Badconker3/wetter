@@ -27,7 +27,7 @@ $(document).ready(function(){
 			console.log(data);
 			$('.current-temperature').text(data.currently.temperature + '°C');
 			skycons.set($('.js-icon')[0], data.currently.icon);
-			$('.wetter-jetzt').text(data.hourly.data[0].icon:"rain");
+			$('.wetter-jetzt').text(data.hourly.data[0].summary);
 			$('.wetter-eins').text(data.hourly.data[1].summary);
 			$('.wetter-zwei').text(data.hourly.data[2].summary);
 			$('.wetter-drei').text(data.hourly.data[3].summary);
