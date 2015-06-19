@@ -1,6 +1,12 @@
 $(document).ready(function(){
 	navigator.geolocation.getCurrentPosition(function(position){
 
+		var skycons = new Skycons({
+		"color": "white",
+		resizeClear: true
+		});
+
+
 		var koordinaten = {
 			longitude: position.coords.longitude,
 			latitude: position.coords.latitude
@@ -54,6 +60,7 @@ $(document).ready(function(){
 	});
 
 	var skycons = new Skycons({
+		console.log(data);
 		"color": "white",
 		resizeClear: true
 		});
