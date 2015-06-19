@@ -5,21 +5,21 @@
 	text-align: center;
 }
 #main{
-	background-color: black;
+	background-color: ff1a02;
 	color: white;
 }
 #sub{
-	background-color: black;
+	background-color: ff1a02;
 	color: white
 }
 #head{
-	background-color: red;
+	background-color: ffff00;
 }
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
-	background-color: red;
+	background-color: ffff00;
 }
 #sonne{
 	position: center;
