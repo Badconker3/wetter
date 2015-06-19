@@ -7,19 +7,23 @@
 #main{
 	background-color: #ff1a02;
 	color: black;
+	text-shadow: none;
 }
 #sub{
 	background-color: #ff1a02;
 	color: black;
+	text-shadow: none;
 }
 #head{
 	background-color: #ff1a02;
+	text-shadow: none;
 }
 #footer{
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	background-color: #ff1a02;
+	text-shadow: none;
 }
 #sonne{
 	position: center;
@@ -27,12 +31,24 @@
 #content{
 	text-align: center;
 }
-#sonne{
-	transform:rotate(180deg);
+
 }
 .canvas{
 	display: block;
 	height: 128px;
 	width: 128px;
 	margin: 0 auto;
+}
+#btn{
+	border-color: black;
+	border-width: 5px;
+	background-color: #ff1a02;
+	text-shadow: none;
+}
+#btnb{
+	border-color: black;
+	border-width: 5px;
+	background-color: #ff1a02;
+	text-shadow: none;
+	float: left;
 }
