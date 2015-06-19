@@ -52,4 +52,17 @@ $(document).ready(function(){
 			})
 		});
 	});
+
+	var skycons = new Skycons({
+		"color": "white",
+		resizeClear: true
+		});
+
+	skycons.add($('.js-icon')[0], Skycons.RAIN);
+		
+	skycons.play();
+
+	setTimeout(function(){
+		skycons.set($('.js-icon')[0], Skycons.PARTLY_CLOUDY_DAY);
+	}, 5000);
 });

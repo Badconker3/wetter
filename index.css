@@ -26,3 +26,10 @@
 #sonne{
 	transform:rotate(180deg);
 }
+.canvas{
+	display: block;
+	height: 128px;
+	width: 128px;
+	margin: 0 auto;
+
+}
