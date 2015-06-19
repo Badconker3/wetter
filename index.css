@@ -26,6 +26,7 @@ font-family: 'Squada One', cursive;
 	border: none;
 	border-bottom: 5px;
 	border-color: black;
+	text-align: center;
 }
 #footer{
 	font-family: 'Orbitron', sans-serif;
