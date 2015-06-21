@@ -65,7 +65,7 @@ var skycons = new Skycons({
 
 	
 
-	skycons.add($('.js-icon')[0], Skycons.RAIN);
+	skycons.add($('.js-icon')[0], Skycons.SUN);
 		
 	skycons.play();
 

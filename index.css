@@ -3,12 +3,17 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Squada One', cursive;
 
 .current-temperature{
-		text-align: center;
+	text-align: center;
 	}
 .wetter-voraussage{
 	text-align: center;
 }
 #main{
+	background-color: #ff1a02;
+	color: black;
+	text-shadow: none;
+}
+#mid{
 	background-color: #ff1a02;
 	color: black;
 	text-shadow: none;
@@ -51,11 +56,19 @@ font-family: 'Squada One', cursive;
 	width: 128px;
 	margin: 0 auto;
 }
-#btn{
+#btnl{
 	font-family: 'Play', sans-serif;
-	border-color: black;
-	border-width: 5px;
+	border: none;
 	background-color: #ff1a02;
+	color: black;
 	text-shadow: none;
+	float: left;
 }
+#btnr{
+	font-family: 'Play', sans-serif;
+	border: none;
+	background-color: #ff1a02;
+	color: black;
+	text-shadow: none;
+	float: right;
 

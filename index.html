@@ -25,66 +25,100 @@
 <body>
 	<div data-role="page" id="main">
 		<div data-role="header" id="head">
+			<br>
 			<div class="strasse"></div>
 			<div class="ort"></div>
 			<div class="land"></div>
 		</div>
 			<div role="main" class="ui-content" id="content">
+				
+				<h1 class="current-temperature">  °C</h1>
+				<br>
+				<h3 class="wetter-jetzt"></h3>
+				<br>
+				<canvas class="js-icon" height="128" widht="128"></canvas>
 			
-			
-			<h1 class="current-temperature">  °C</h1>
-			<br>
-			<h3 class="wetter-jetzt"></h3>
-			<br>
-			<canvas class="js-icon" height="128" widht="128"></canvas>
-			<!--<img src="Sonne_V2.png" alt="Bild der Sonne" id="sonne">-->
-			
-			
-		
-
 			</div>
 			<div data-role="footer" id="footer">
-				<div><a href="#sub" data-transition="flip" class="ui-btn" id="btn">FORWARD TO THE FUTURE</a></div>
+				<div>
+					<a href="#mid" data-transition="flip" class="ui-btn" id="btnl">HOURLY</a>
+				</div>
+				<div>				
+					<a href="#sub" data-transition="flip" class="ui-btn" id="btnr">DAILY</a>
+				</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="mid">
+		<div data-role="header" id="head">
+			<div>HOURLY FORCAST FOR 12 HOURS</div>
+		</div>
+		<div role="main" class="ui-content" id="content">
+			
+			<p class="zeit">aktuell:</p>
+			<h3 class="wetter-jetzt"></h3>
+			<p>in einer Stunde:</p>
+			<h3 class="wetter-eins"></h3>
+			<p>in zwei Stunden:</p>
+			<h3 class="wetter-zwei"></h3>
+			<p>in drei Stunden:</p>
+			<h3 class="wetter-drei"></h3>
+			<p>in vier Stunden:</p>
+			<h3 class="wetter-vier"></h3>
+			<p>in fünf Stunden:</p>
+			<h3 class="wetter-fünf"></h3>
+			<p>in sechs Stunden:</p>
+			<h3 class="wetter-sechs"></h3>
+			<p>in sieben Stunden:</p>
+			<h3 class="wetter-sieben"></h3>
+			<p>in acht Stunden:</p>
+			<h3 class="wetter-acht"></h3>
+			<p>in neun Stunden:</p>
+			<h3 class="wetter-neun"></h3>
+			<p>in zehn Stunden:</p>
+			<h3 class="wetter-zehn"></h3>
+			<p>in elf Stunden:</p>
+			<h3 class="wetter-elf"></h3>
+			<p>in zwölf Stunden:</p>
+			<h3 class="wetter-zwölf"></h3>
+			<br>
+			
+			</div>
+			<div data-role="footer" id="footer">
+				<div>
+					<a href="#main" data-transition="flip" class="ui-btn" id="btnr">NOW</a>
+				</div>
+				<div>
+					<a href="#sub" data-transition="flip" class="ui-btn" id="btnl">DAILY</a>
+				</div>
 			</div>
 	</div>
 
 	<div data-role="page" id="sub">
 		<div data-role="header" id="head">
-		
-			<div>Wetterprognose</div>
+			<div>DAILY FORCAST FOR A WEEK</div>
 		</div>
-			<div role="main" class="ui-content" id="content">
-				<p class="zeit">aktuell:</p>
-				<h3 class="wetter-jetzt"></h3>
-				<p>in einer Stunde:</p>
-				<h3 class="wetter-eins"></h3>
-				<p>in zwei Stunden:</p>
-				<h3 class="wetter-zwei"></h3>
-				<p>in drei Stunden:</p>
-				<h3 class="wetter-drei"></h3>
-				<p>in vier Stunden:</p>
-				<h3 class="wetter-vier"></h3>
-				<p>in fünf Stunden:</p>
-				<h3 class="wetter-fünf"></h3>
-				<p>in sechs Stunden:</p>
-				<h3 class="wetter-sechs"></h3>
-				<p>in sieben Stunden:</p>
-				<h3 class="wetter-sieben"></h3>
-				<p>in acht Stunden:</p>
-				<h3 class="wetter-acht"></h3>
-				<p>in neun Stunden:</p>
-				<h3 class="wetter-neun"></h3>
-				<p>in zehn Stunden:</p>
-				<h3 class="wetter-zehn"></h3>
-				<p>in elf Stunden:</p>
-				<h3 class="wetter-elf"></h3>
-				<p>in zwölf Stunden:</p>
-				<h3 class="wetter-zwölf"></h3>
+
+		<div role="main" class="ui-content" id="content">
+			
+			<p class="tag-eins"></p>
+			<p class="tag-zwei"></p>
+			<p class="tag-drei"></p>
+			<p class="tag-vier"></p>
+			<p class="tag-fünf"></p>
+			<p class="tag-sechs"></p>
+			<p class="tag-sieben"></p>
 				
+		</div>
+		
+		<div data-role="footer" id="footer">
+			<div>
+				<a href="#main" data-transition="flip" class="ui-btn" id="btnl">NOW</a>
 			</div>
-			<div data-role="footer" id="footer">
-				<div><a href="#main" data-transition="flip" class="ui-btn" id="btn">BACK TO THE FUTURE</a></div>
+			<div>
+				<a href="#mid" data-transition="flip" class="ui-btn" id="btnr">HOURLY</a>
 			</div>
-	
+		</div>
+	</div>
 </body>
 </html>
