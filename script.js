@@ -1,11 +1,5 @@
 $(document).ready(function(){
 
-var datum = new Date();
-var stunden = datum.getHours();
-var minuten = datum.getMinutes();
-var sekunden = datum.getSeconds();
-var zeit = stunden + ':' + minuten + ':' + sekunden;
-
 var skycons = new Skycons({
 		"color": "black",
 		resizeClear: true
@@ -49,7 +43,6 @@ var skycons = new Skycons({
 			$('.wetter-zehn').text(data.hourly.data[10].summary);
 			$('.wetter-elf').text(data.hourly.data[11].summary);
 			$('.wetter-zwölf').text(data.hourly.data[12].summary);
-			$('.datum-eins').text(data.daily.data[1].time);
 			$('.tag-eins').text(data.daily.data[1].summary);
 			$('.tag-zwei').text(data.daily.data[2].summary);
 			$('.tag-drei').text(data.daily.data[3].summary);

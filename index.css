@@ -46,9 +46,10 @@ font-family: 'Squada One', cursive;
 }
 #content{
 	text-align: center;
-	font-family: 'Squada One', cursive;
+	font-family: 'Orbitron', sans-serif;
 }
-
+#h2{
+	font-family: 'Orbitron', sans-serif;
 }
 .canvas{
 	display: block;
