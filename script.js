@@ -25,7 +25,7 @@ var skycons = new Skycons({
 			},
 			dataType: 'jsonp'
 		}).done(function(data){
-			console.log(data);
+			//console.log(data);
 			$('.current-temperature').text(data.currently.temperature + '°C');
 			skycons.set($('.js-icon')[0], data.currently.icon);
 			skycons.play();
@@ -71,13 +71,18 @@ var skycons = new Skycons({
 				lang: 'de'
 				}
 			}).done(function(data){
-				console.log(data);
+				//console.log(data);
 				//hier werden die einzelnen Daten aus dem Array gelesen
 				$('.strasse').text(data.results[0].address_components[1].long_name);
 				$('.ort').text(data.results[0].address_components[2].long_name);
 				$('.land').text(data.results[0].address_components[5].long_name);
 			})
 		});
+	});
+
+	$( document ).on('pageshow', '#map', function() {
+		//console.log(koordinaten);
+		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
 
