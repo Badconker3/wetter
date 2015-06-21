@@ -85,7 +85,6 @@ var skycons = new Skycons({
 		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
 	});
 
-
 	function drawMap(latlng) {
 		var myOptions = {
 			zoom: 10,
@@ -98,7 +97,5 @@ var skycons = new Skycons({
 			position: latlng,
 			map: map
 		});
-	}
-
-	
+	}	
 });
