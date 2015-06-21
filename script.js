@@ -5,19 +5,17 @@ var skycons = new Skycons({
 		resizeClear: true
 		});
 
-	navigator.geolocation.getCurrentPosition(function(position){
-
+		var koordinaten;
 		
+		navigator.geolocation.getCurrentPosition(function(position){
+			koordinaten = {
 
-
-		var koordinaten = {
 			longitude: position.coords.longitude,
 			latitude: position.coords.latitude
 		};
-		//console.log(position);
-		//$('.longitude').text(position.coords.longitude);
-		//$('.latitude').text(position.coords.latitude);
-		//$('.accuracy').text(position.coords.accuracy);
+	
+		drawMap(new google.maps.LatLng(koordinaten.latitude, koordinaten.longitude));
+
 		//Vorcast io Anfrage
 		$.ajax({
 			url:'https://api.forecast.io/forecast/3a29abb9ce9c8e475af3d33012259689/' + koordinaten.latitude + ',' + koordinaten.longitude,
@@ -30,6 +28,7 @@ var skycons = new Skycons({
 			console.log(data);
 			$('.current-temperature').text(data.currently.temperature + '°C');
 			skycons.set($('.js-icon')[0], data.currently.icon);
+			skycons.play();
 			$('.wetter-jetzt').text(data.hourly.data[0].summary);
 			$('.wetter-eins').text(data.hourly.data[1].summary);
 			$('.wetter-zwei').text(data.hourly.data[2].summary);
@@ -62,8 +61,6 @@ var skycons = new Skycons({
 			$('.tag-fünf').text(data.daily.data[5].summary);
 			$('.tag-sechs').text(data.daily.data[6].summary);
 			$('.tag-sieben').text(data.daily.data[7].summary);
-			
-			
 
 			//Google Maps io Anfrage
 			$.ajax({
@@ -83,8 +80,20 @@ var skycons = new Skycons({
 		});
 	});
 
-	skycons.add($('.js-icon')[0], Skycons.SUN);
-		
-	skycons.play();
 
+	function drawMap(latlng) {
+		var myOptions = {
+			zoom: 10,
+			center: latlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map($('.map-canvas')[0], myOptions);
+
+		var marker = new google.maps.Marker({
+			position: latlng,
+			map: map
+		});
+	}
+
+	
 });

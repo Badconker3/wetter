@@ -17,6 +17,7 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgYh-UffzCV54XCcReML4WSqyb0_zv8x8"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="skycons.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Play:400,700|Orbitron:400,500,700,900|Squada+One' rel='stylesheet' type='text/css'>
@@ -45,10 +46,12 @@
 			<div data-role="footer" id="footer">
 				<div>
 					<a href="#mid" data-transition="flip" class="ui-btn" id="btnl">HOURLY</a>
-				</div>
-				<div>				
+				
+					<a href="#map" data-transition="flip" class="ui-btn" id="btnm">MAP</a>
+								
 					<a href="#sub" data-transition="flip" class="ui-btn" id="btnr">DAILY</a>
 				</div>
+			</div>
 		</div>
 	</div>
 
@@ -114,12 +117,14 @@
 			</div>
 			<div data-role="footer" id="footer">
 				<div>
-					<a href="#main" data-transition="flip" class="ui-btn" id="btnr">NOW</a>
-				</div>
-				<div>
-					<a href="#sub" data-transition="flip" class="ui-btn" id="btnl">DAILY</a>
+					<a href="#main" data-transition="flip" class="ui-btn" id="btnl">NOW</a>
+				
+					<a href="#map" data-transition="flip" class="ui-btn" id="btnm">MAP</a>
+				
+					<a href="#sub" data-transition="flip" class="ui-btn" id="btnr">DAILY</a>
 				</div>
 			</div>
+		</div>	
 	</div>
 
 	<div data-role="page" id="sub">
@@ -151,9 +156,30 @@
 		<div data-role="footer" id="footer">
 			<div>
 				<a href="#main" data-transition="flip" class="ui-btn" id="btnl">NOW</a>
-			</div>
-			<div>
+		
+				<a href="#map" data-transition="flip" class="ui-btn" id="btnm">MAP</a>
+			
 				<a href="#mid" data-transition="flip" class="ui-btn" id="btnr">HOURLY</a>
+			</div>
+		</div>
+	</div>
+
+	<div data-role="page" id="map">
+		<div data-role="header" id="head">
+			<br>
+			<div>MAP</div>
+		</div>
+		<div role="main" class="ui-content" id="content">
+			<div class="map-canvas"></div>
+		</div>
+		
+		<div data-role="footer" id="footer">
+			<div>
+				<a href="#mid" data-transition="flip" class="ui-btn" id="btnl">HOURLY</a>
+			
+				<a href="#main" data-transition="flip" class="ui-btn" id="btnm">NOW</a>
+			
+				<a href="#sub" data-transition="flip" class="ui-btn" id="btnr">DAILY</a>
 			</div>
 		</div>
 	</div>

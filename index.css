@@ -61,6 +61,10 @@ font-family: 'Squada One', cursive;
 	color: black;
 	text-shadow: none;
 	float: left;
+	margin-left:0; 
+	margin-right:auto;
+	
+
 }
 #btnr{
 	font-family: 'Play', sans-serif;
@@ -69,4 +73,20 @@ font-family: 'Squada One', cursive;
 	color: black;
 	text-shadow: none;
 	float: right;
+	margin-left:auto; margin-right:0;
+	
+
+
+}
+#btnm{
+	font-family: 'Play', sans-serif;
+	border: none;
+	background-color: #ff1a02;
+	color: black;
+	text-shadow: none;
+	margin-left:40%;
+ 	margin-right:40%;
+
+
+}
 
